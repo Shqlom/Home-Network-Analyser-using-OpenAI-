@@ -1,16 +1,4 @@
-#!/usr/bin/env python3
-"""
-HomeNet Guardian — lightweight home traffic watcher with ChatGPT API scoring
-- Captures DNS queries and HTTP requests on your LAN
-- Extracts domains/URLs/IPs and runs fast heuristics
-- Uses OpenAI Responses API to get an explainable risk score + recommendation
-- Caches verdicts in SQLite so you don't re-query the API for the same indicator
-- Writes human-readable alerts to console and JSONL file for later review
 
-Notes:
-- HTTPS content is encrypted; we rely on DNS domains (and any plain HTTP traffic).
-- Run with elevated privileges to sniff (sudo on macOS/Linux; admin on Windows).
-"""
 
 import os
 import re
